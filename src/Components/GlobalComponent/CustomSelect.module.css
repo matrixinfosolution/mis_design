@@ -1,0 +1,73 @@
+.customSelect {
+    position: relative;
+    /* width: 200px; */
+    font-family: Arial, sans-serif;
+  }
+  
+  .selectBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff; /* Solid background color */
+    z-index: 1; /* Ensure selectBox is above other content */
+  }
+  
+  .icon {
+    font-size: 18px;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; /* Solid background color */
+    z-index: 100; /* Ensure dropdown is above other content */
+    margin-top: 4px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for better separation */
+  }
+  
+  .searchBox {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff; /* Solid background color */
+  }
+  
+  .searchIcon {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+  
+  .searchInput {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #fff; /* Solid background color */
+  }
+  
+  .optionsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: #fff; /* Solid background color */
+  }
+  
+  .option {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    background-color: #f0f0f0;
+  }
+  
