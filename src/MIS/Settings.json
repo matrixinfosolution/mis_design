@@ -1,0 +1,11 @@
+{
+    "adminsetting": {
+      "expdays":365
+    },
+    "taskSetting":  {
+      "pendingdays":30,
+      "defulatloaddays":30,
+      "isreturn":false
+    }
+  }
+  
