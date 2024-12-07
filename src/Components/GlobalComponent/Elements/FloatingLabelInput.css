@@ -1,0 +1,78 @@
+/* Floating Element End */
+  .floating-label-input {
+    position: relative;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px 12px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #136e95;
+    box-shadow: 0 0 5px rgba(19, 110, 149, 0.5);
+    bottom: 0;
+  }
+  
+  .input-label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    font-size: 1rem;
+    color: #aaa;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .input-field:focus + .input-label,
+  .input-field:not(:placeholder-shown) + .input-label {
+    top: 0;
+    font-size: 0.85rem;
+    color: #136e95;
+    background: #fff;
+    padding: 0 5px;
+    
+  }
+   
+  
+  /* Error Handling */
+   
+  .floating-label-input.has-error .input-field {
+    border-color: #d93025;
+    box-shadow: none;    
+    
+  }
+  
+  .floating-label-input.has-error .input-label {
+    color: #d93025;   
+    top: -0px; 
+    background: #fff;
+  }
+  
+  .error-message {
+    font-size: 0.875rem;
+    color: #d93025;
+    margin-top: 5px;
+  }
+
+  .floating-label-input.is-disabled .input-field {
+    cursor: not-allowed;
+    opacity: 0.6; /* Optional: Make the input visually distinct */
+    background-color: #f9f9f9; /* Example disabled styling */
+  }
+  
+  .floating-label-input .input-field[readonly] {
+    cursor: default;
+    background-color: #f3f3f3; /* Example readonly styling */
+  }
+  
+  
