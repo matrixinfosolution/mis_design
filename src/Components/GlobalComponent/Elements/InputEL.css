@@ -1,0 +1,103 @@
+.bordered-div {
+  position: relative;
+  /* Allow the label to be positioned inside the div */
+  border: 1px solid #C0C0C0;
+  /* Border with color and thickness */
+  border-radius: 5px;
+  padding: 8px;
+  transition: all 0.3s ease;
+  /* Smooth transition for all properties */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
+}
+
+.bordered-div label {
+  position: absolute;
+  /* Position label absolutely inside the div */
+  top: -13px;
+  /* Align the label to the top of the div */
+  left: 10px;
+  /* Align the label to the left of the div */
+  font-weight: 400;
+  margin: 0;
+  z-index: 9;
+  background-color: #fff;
+}
+
+.inp {
+  border: none;
+  width: 100%;
+  padding: 2px;
+}
+
+.inp:focus {
+  border: none;
+  outline: none;
+}
+
+.bordered-div:has(.inp:focus) {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+  transform: scale(1.02);
+}
+
+.inp-icon-start {
+  padding-left: 25px;
+}
+
+.inp-icon-end {
+  padding-right: 25px;
+}
+
+.start-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.end-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+
+.bordered-div:has(.inp[disabled]),
+.bordered-div:has(.inp[read-only]) {
+  border-color: #ccc;
+  background-color: #f9f9f9;
+  cursor: not-allowed;
+  box-shadow: none;
+  /* Remove shadow */
+}
+
+/* CSS class to hide stepper buttons */
+.hide-stepper::-webkit-outer-spin-button,
+.hide-stepper::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+.hide-stepper {
+  -moz-appearance: textfield;
+}
+
+
+
+.standard {  
+  border: 1px solid #C0C0C0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius:0px;
+  transition: none;  
+  box-shadow: none;
+  
+}
+
+ 

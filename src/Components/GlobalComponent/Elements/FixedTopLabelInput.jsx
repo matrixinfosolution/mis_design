@@ -5,21 +5,24 @@ const FixedTopLabelInput = ({
   type = "text",
   id,
   label,
-  value,
-  onChange,
-  onBlur,
-  onFocus,
+  value,  
   startIcon,
   endIcon,
   error,
-  touched,
-  disabled,
+  touched,  
+  placeholder,
+  size = "md",
+  className="",
+  labelClassName="",
+  readOnly = false,
+  disabled = false,
+  events = {}, // Dynamic event handlers
 }) => {
   const isLabelFilled = value?.trim().length > 0;
 
   return (
     <div
-      className={`fixed-top-label-input ${
+      className={`fixed-top-label-input ${size} ${
         error && touched ? "has-error" : ""
       } ${disabled ? "is-disabled" : ""}`}
     >
@@ -28,17 +31,17 @@ const FixedTopLabelInput = ({
         type={type}
         id={id}
         value={value}
-        onChange={onChange}
-        onBlur={onBlur}
-        onFocus={onFocus}
+        placeholder={placeholder}
         disabled={disabled}
+        readOnly={readOnly}
         className={`input-field ${
           startIcon ? "has-start-icon" : ""
-        } ${endIcon ? "has-end-icon" : ""}`}
+        } ${endIcon ? "has-end-icon" : ""} ${className}`}
+        {...events} /* Spread dynamic event handlers */
       />
       <label
         htmlFor={id}
-        className={`input-label ${isLabelFilled ? "label-filled" : ""}`}
+        className={`input-label label-filled ${labelClassName}`}
       >
         {label}
       </label>
