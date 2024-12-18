@@ -16,6 +16,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import reportWebVitals from './reportWebVitals';
 import { render } from "react-dom";
 import Testing from './Components/Test/Testing';
+import Navigation from './Components/Navigation/Navigation';
 
 const root = document.getElementById("root");
 const queryClient = new QueryClient();
@@ -27,7 +28,8 @@ render(
       <BrowserRouter>
         <Routes>
            <Route path="/" element={<App/>}/>
-           <Route path="/test" element={<Testing/>}/>                         
+           <Route path="/test" element={<Testing/>}/> 
+           <Route path="/nav" element={<Navigation/>}/>                        
         </Routes>
       </BrowserRouter>
       </QueryClientProvider>
