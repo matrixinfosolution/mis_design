@@ -4,8 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import left from '../icons/left_arrow.png';
-import right from '../icons/right.png';
+
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoPersonOutline } from "react-icons/io5";
@@ -16,7 +15,6 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Navigation.css';
-import Headroom from 'react-headroom';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 const PreviousBtn=(props)=>{
@@ -87,6 +85,8 @@ const Navigation=()=>{
     };
   }, [lastScrollY]);
 
+  
+
 
     return(
   <body>
@@ -131,8 +131,11 @@ const Navigation=()=>{
           </Navbar>
   
       <Navbar expand="lg" className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
-          <Container>
-          <Navbar.Collapse className='display-flex justify-content-center text-center align-items-center'>
+        
+          <Navbar.Collapse className='display-flex justify-content-between text-center align-items-center'>
+            
+              <h1>Tryox</h1>
+              
     
           <Nav className="nav_link" style={{ gap:'1.5rem'}} >
            {/* <Nav.Link href="#home" className="active">Home</Nav.Link>
@@ -141,18 +144,25 @@ const Navigation=()=>{
             <Nav.Link href="#link" className='btn'>Pages</Nav.Link>
             <Nav.Link href="#link"className='btn'>Blogs</Nav.Link>
             <Nav.Link href="#link" className='btn'>Features</Nav.Link>*/}
+            <div>
             <a href="#" className='active'>Home</a>
             <a href="#">Shop</a>
             <a href="#">AboutUs</a>
             <a href="#">Contact</a>
+            </div>
+            <div id="mobile">
+             <i className="fa-solid fa-bars"></i>
+            </div>
+            
             </Nav>
+            
       
            </Navbar.Collapse>
           
          <Navbar.Collapse className="icon">
           <Nav style={{ gap:'1rem',alignItems:'center'}} className='navbar-right'>
             <OverlayTrigger placement='bottom' delay={{show:250,hide:400}} overlay={tooltip}>
-          <span><IoPersonOutline/></span>
+          <span><IoPersonOutline style={{color:"black"}}/></span>
           </OverlayTrigger>
 
           <OverlayTrigger placement='bottom' delay={{show:250,hide:400}} overlay={renderTooltip}>
@@ -163,7 +173,7 @@ const Navigation=()=>{
 
             </Navbar.Collapse>
 
-          </Container>
+        
           
           
           </Navbar>
