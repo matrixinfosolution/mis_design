@@ -17,6 +17,7 @@ import reportWebVitals from './reportWebVitals';
 import { render } from "react-dom";
 import Testing from './Components/Test/Testing';
 import Navigation from './Components/Navigation/Navigation';
+import NavbarText from './Components/NavbarText';
 
 const root = document.getElementById("root");
 const queryClient = new QueryClient();
@@ -29,7 +30,10 @@ render(
         <Routes>
            <Route path="/" element={<App/>}/>
            <Route path="/test" element={<Testing/>}/> 
-           <Route path="/nav" element={<Navigation/>}/>                        
+           <Route path="/nav" element={<Navigation/>}/> 
+           <Route path="/navbr" element={<NavbarText/>}/>
+
+
         </Routes>
       </BrowserRouter>
       </QueryClientProvider>
