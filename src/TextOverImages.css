@@ -1,0 +1,117 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;/* Space between images */
+    justify-content: center; /* Center content horizontally */
+  }
+  /* Image container */
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Maximum width for the image */
+  }
+  
+  /* Styling for the image */
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
+   /* Optional: rounded corners */
+  }
+  
+  /* Text overlay styling */
+  .text-overlay {
+    position: absolute;
+    bottom: 0;
+  left: 0;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding: 10px;
+
+  }
+  .tag{
+    position: absolute;
+    bottom: 5rem;
+    left: 10px;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    border-radius: 5px;
+  }
+  .date {
+    position: absolute;
+    bottom: 5rem; /* Position it near the bottom */
+    left: 6rem; /* Position it to the right */
+    color: white;
+    font-size: 16px;
+    /* Semi-transparent black background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: normal;
+  }
+  .date1{
+    position: absolute;
+    bottom: 3rem; /* Position it near the bottom */
+    left: 5rem; /* Position it to the right */
+    color: white;
+    font-size: 16px;
+    /* Semi-transparent black background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: normal;
+  }
+  /* Tag overlay styling */
+  .tag-overlay {
+    position: absolute;
+    bottom: 5rem;
+    left: 10px;
+    font-size: 14px;
+    color: white;
+    background: rgba(255, 0, 0, 0.7); /* Red background */
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .tag-overlay1 {
+    position: absolute;
+    bottom: 3rem;
+    left: 10px;
+    font-size: 14px;
+    color: white;
+    background: purple;/* Red background */
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .image-container {
+      max-width: 100%; /* Allow the image to take full width on smaller screens */
+    }
+  
+    .tag-overlay {
+      font-size: 12px; /* Make tag text smaller on mobile */
+      padding: 4px 8px;
+    }
+  
+    .text-overlay {
+      font-size: 16px; /* Smaller font size for text on mobile */
+      padding: 8px;
+    }
+  
+    .date {
+      font-size: 14px; /* Smaller font size for date on mobile */
+      padding: 4px 8px;
+    }
+    .tag-overlay1 {
+        font-size: 12px; /* Make tag text smaller on mobile */
+        padding: 4px 8px;
+      }
+      .date1 {
+        font-size: 14px; /* Smaller font size for date on mobile */
+        padding: 4px 8px;
+      }
+    
+  }
