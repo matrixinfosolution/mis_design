@@ -1,0 +1,101 @@
+.container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically by default */
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: row; /* Align image and text horizontally */
+    align-items: flex-start; /* Vertically align image and text */
+    justify-content: flex-start;
+    gap: 10px; /* Space between image and text */
+    width: 100%;
+    max-width: 400px; /* Maximum width for each item */
+    margin: 0 auto; /* Center the items */
+  }
+  
+  .image1 {
+    width: 50%; /* Small size for the images */
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  
+  .text {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    flex:1;
+    white-space: normal; /* Allow the text to wrap if needed */
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis;/* Break words if they are too long */
+    flex-wrap:nowrap; 
+  }
+  
+  /* Media Query for responsive design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;/* Stack the items vertically on smaller screens */
+      justify-content: flex-start;
+    }
+  
+    .item {
+      flex-direction: row; /* Stack image and text vertically on small screens */
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+  
+    .image1 {
+      width: 100px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+  
+    .text {
+      font-size: 10px;
+      flex-wrap: nowrap;
+      white-space: normal; /* Allow the text to wrap if needed */
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    }
+  }
+
+  @media (max-width: 576px) {
+    .container {
+      flex-direction: column; /* Stack the items vertically on smaller screens */
+      justify-content: center;
+      align-items: center;
+     
+    }
+  
+    .item {
+      flex-direction: row; /* Stack image and text vertically on small screens */
+      align-items: flex-start;
+     
+      flex-wrap: nowrap;
+    }
+   
+  
+    .image1 {
+      width: 80px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+    .text {
+      font-size: 15px;
+      margin-left: 0;
+      align-items: flex-start;
+      
+      flex-wrap:nowrap;
+      max-width: calc(100% - 160px); 
+    }
+  }
+
+  

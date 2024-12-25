@@ -17,6 +17,7 @@ import reportWebVitals from './reportWebVitals';
 import { render } from "react-dom";
 import Testing from './Components/Test/Testing';
 import TextOverImages from './TextOverImages';
+import TextBesidesImage from './TextBesidesImage';
 
 const root = document.getElementById("root");
 const queryClient = new QueryClient();
@@ -29,7 +30,9 @@ render(
         <Routes>
            <Route path="/" element={<App/>}/>
            <Route path="/test" element={<Testing/>}/>   
-           <Route path="/text" element={<TextOverImages/>}/>                       
+           <Route path="/text" element={<TextOverImages/>}/>
+           <Route path="/timg" element={<TextBesidesImage/>}/>   
+                               
         </Routes>
       </BrowserRouter>
       </QueryClientProvider>
