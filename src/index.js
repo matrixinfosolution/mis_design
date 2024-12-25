@@ -18,6 +18,7 @@ import { render } from "react-dom";
 import Testing from './Components/Test/Testing';
 import TextOverImages from './TextOverImages';
 import TextBesidesImage from './TextBesidesImage';
+import TextBelowImages from './TextBelowImages';
 
 const root = document.getElementById("root");
 const queryClient = new QueryClient();
@@ -31,7 +32,9 @@ render(
            <Route path="/" element={<App/>}/>
            <Route path="/test" element={<Testing/>}/>   
            <Route path="/text" element={<TextOverImages/>}/>
-           <Route path="/timg" element={<TextBesidesImage/>}/>   
+           <Route path="/timg" element={<TextBesidesImage/>}/> 
+           <Route path="/tbox" element={<TextBelowImages/>}/> 
+             
                                
         </Routes>
       </BrowserRouter>

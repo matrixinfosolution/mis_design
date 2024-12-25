@@ -39,6 +39,7 @@
     flex-wrap:nowrap; 
   }
   
+  
   /* Media Query for responsive design */
   @media (max-width: 768px) {
     .container {
