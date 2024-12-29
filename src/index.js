@@ -19,6 +19,8 @@ import Testing from './Components/Test/Testing';
 import TextOverImages from './TextOverImages';
 import TextBesidesImage from './TextBesidesImage';
 import TextBelowImages from './TextBelowImages';
+import CategoryTable from './CategoryTable';
+import CategoryImage from './CategoryImage';
 
 const root = document.getElementById("root");
 const queryClient = new QueryClient();
@@ -34,7 +36,8 @@ render(
            <Route path="/text" element={<TextOverImages/>}/>
            <Route path="/timg" element={<TextBesidesImage/>}/> 
            <Route path="/tbox" element={<TextBelowImages/>}/> 
-             
+           <Route path="/cat" element={<CategoryTable/>}/> 
+           <Route path="/catimg" element={<CategoryImage/>}/> 
                                
         </Routes>
       </BrowserRouter>

@@ -1,0 +1,43 @@
+.category-tag{
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+   display: inline-block;
+   align-items: end;
+
+}
+.butt1{
+    
+    background: green;
+}
+.butt2{
+    
+    background: orange;
+}
+.butt3{
+    
+    background: blue;
+}
+.butt4{
+    background: purple;
+}
+.category-table td:hover{
+    color:green;
+}
+
+@media (max-width: 768px) {
+    .category-table {
+      font-size: 14px;
+    }
+  
+    .category-table th, .category-table td {
+      padding: 8px; /* Reduces padding for smaller screens */
+    }
+  
+    .category-tag {
+      font-size: 14px; /* Smaller font size for smaller screens */
+      padding: 6px 12px; /* Adjust padding for smaller screens */
+    }
+  }
