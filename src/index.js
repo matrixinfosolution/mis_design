@@ -21,6 +21,7 @@ import TextBesidesImage from './TextBesidesImage';
 import TextBelowImages from './TextBelowImages';
 import CategoryTable from './CategoryTable';
 import CategoryImage from './CategoryImage';
+import LoginPage from './LoginPage';
 
 const root = document.getElementById("root");
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ render(
            <Route path="/tbox" element={<TextBelowImages/>}/> 
            <Route path="/cat" element={<CategoryTable/>}/> 
            <Route path="/catimg" element={<CategoryImage/>}/> 
+           <Route path="/log" element={<LoginPage/>}/> 
                                
         </Routes>
       </BrowserRouter>
