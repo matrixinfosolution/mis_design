@@ -1,0 +1,36 @@
+.navbar-wrapper{
+    
+    background: blueviolet;
+    color:black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* box-shadow: 11px 12px 13px 12px rgb(207,207,207);*/
+  }
+  .logo{
+    color:black;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .nav-menu{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+  .nav-item{
+
+    display: flex;
+    align-items: center;
+  }
+ 
+  .nav-menu a{
+   text-decoration: none;
+   color: black;
+   font-size: 1.1rem;
+   margin-right: 2rem;
+  }
+ 

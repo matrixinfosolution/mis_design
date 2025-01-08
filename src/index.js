@@ -24,6 +24,8 @@ import CategoryImage from './CategoryImage';
 import LoginPage from './LoginPage';
 import Footer from './Footer';
 import SignUpPage from './SignUpPage';
+import HeaderDropdown from './HeaderDropdown';
+import DropNavbar from './DropNavbar';
 
 const root = document.getElementById("root");
 const queryClient = new QueryClient();
@@ -44,6 +46,7 @@ render(
            <Route path="/log" element={<LoginPage/>}/>
            <Route path="/foot" element={<Footer/>}/>
            <Route path="/sign" element={<SignUpPage/>}/> 
+           <Route path="/drop" element={<DropNavbar/>}/> 
            
                                
         </Routes>

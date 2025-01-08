@@ -1,0 +1,53 @@
+.home-submenu{
+    position: absolute;
+  top: 100%;  /* Position the dropdown directly below the Home item */
+  left: 0;
+  transform: translateX(-10%);
+  margin-top: 10px;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: none;
+  z-index: 999;
+}
+
+.home-submenu li {
+    background-color: white;
+    padding: 5px 10px ;
+  }
+
+.home-submenu a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+     padding: 10px 20px;
+     
+}
+
+.home-submenu a::after{
+    content:' ';
+    position: absolute;
+    bottom:-5px;
+    left:0;
+    width:100%;
+    height: 2px;
+    background-color: black;
+    border-radius:40px;
+    transform-origin: left;
+    transform: scale(0);
+    transition: transform .3s;
+}
+
+.home-submenu a:hover::after{
+    transform-origin: left;
+    width: 100%;
+    transform: scale(1);
+}
+.nav-item:hover .home-submenu {
+    display: block;
+  }

@@ -1,0 +1,19 @@
+.image{
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit:cover;
+}
+.text{
+    text-align: left;
+}
+.overlay-container{
+    position: relative;
+}
+.overlay-tooltip{
+    position: absolute;
+    margin-top: 12px;
+    padding: 5px 15px;
+    font-size: 12px;
+    border: 1px solid black;
+}
+
