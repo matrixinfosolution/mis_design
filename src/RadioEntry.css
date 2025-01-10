@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .app-container{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin-left: 35px;
+    text-align: left;
+  }
+
+  .header{
+    text-align: left;
+  }
+
+  .description{
+    margin-top: 40px;
+    text-align: left;
+    max-width: 900px;
+   
+}
+.description h1{
+    color:#0D98BA;
+    margin-bottom: 15px;
+}
+.description p{
+    font-size: 0.9rem;
+    color: black;
+    line-height: 1.6;
+}
+.text{
+    color:#0D98BA;
+}
+
+.radio-btn{
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.button-container1{
+    margin-top: 50px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .but3{
+    padding: 8px;
+    margin-right: 20px;
+    background: orangered;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  .but4{
+    padding:9px 15px;
+    font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: #0D98BA;
+  color: white;
+  transition: background-color 0.3s;
+
+  }
