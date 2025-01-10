@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .app-container{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin-left: 35px;
+    text-align: left;
+  }
+
+  .header{
+    margin-bottom: 30px;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;  /* Allow items to wrap on smaller screens */
+    justify-content: space-between;
+    gap: 20px;  /* Add space between description and image */
+  }
+  .description{
+    flex: 1;
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
+   
+}
+  
+  .description h3{
+    color:#0D98BA;
+    margin-bottom: 15px;
+    
+   
+  }
+  .text{
+    color: #0D98BA;
+  }
+  select{
+    width: 60%;
+  }
+  .image1 img {
+    width: 100%;
+    max-width: 400px;  /* Set maximum width to prevent the image from being too large */
+    height: auto;
+  }
+  .image1 {
+    flex: 1;
+    min-width: 300px;  /* Ensure image section doesn’t shrink too much */
+    padding: 20px;
+   
+  }
+
+.buttons1{
+    
+    margin-top: 50px;
+}
+.bitt1{
+    padding:10px;
+    font-size: 15px;
+}
+  @media (max-width:768px) {
+    .content {
+      flex-direction: row;  /* Stack items vertically */
+      align-items: center;
+      justify-content: space-evenly;   /* Center content */
+    }
+  .description{
+    flex: 1 1 45%; 
+  }
+    .image img {
+      width: 80%;  /* Make image smaller on mobile */
+    }
+  }
+ 
