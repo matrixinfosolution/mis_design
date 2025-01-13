@@ -26,6 +26,7 @@ import Footer from './Footer';
 import SignUpPage from './SignUpPage';
 import HeaderDropdown from './HeaderDropdown';
 import DropNavbar from './DropNavbar';
+import Stepper from './Stepper';
 
 const root = document.getElementById("root");
 const queryClient = new QueryClient();
@@ -47,6 +48,7 @@ render(
            <Route path="/foot" element={<Footer/>}/>
            <Route path="/sign" element={<SignUpPage/>}/> 
            <Route path="/drop" element={<DropNavbar/>}/> 
+           <Route path="/step" element={<Stepper/>}/> 
            
                                
         </Routes>
