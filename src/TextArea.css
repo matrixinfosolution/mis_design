@@ -1,0 +1,22 @@
+.text-container{
+    text-align: left;
+    margin-left:20px ;
+    max-width: 800px;
+}
+.text-container h1{
+    color: #088F8F;
+}
+.text-area{
+    width: 100%;             
+    height: 400px;            
+    padding: 10px; 
+    font-size: 16px;
+    border:1px solid #ccc;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.text2{
+    text-align: right;
+    font-size: 0.5rem;
+}

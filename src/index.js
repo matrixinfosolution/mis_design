@@ -29,6 +29,7 @@ import DropNavbar from './DropNavbar';
 import Stepper from './Stepper';
 import TextBookmark from './TextBookmark';
 import TagBookmark from './TagBookmark';
+import TextArea from './TextArea';
 const root = document.getElementById("root");
 const queryClient = new QueryClient();
 
@@ -51,7 +52,8 @@ render(
            <Route path="/drop" element={<DropNavbar/>}/> 
            <Route path="/step" element={<Stepper/>}/> 
            <Route path="/book" element={<TextBookmark/>}/>
-            <Route path="/tag" element={<TagBookmark/>}/>                   
+            <Route path="/tag" element={<TagBookmark/>}/> 
+            <Route path="/area" element={<TextArea/>}/>                  
         </Routes>
       </BrowserRouter>
       </QueryClientProvider>
