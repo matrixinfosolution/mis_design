@@ -1,52 +1,94 @@
+
+.wrapper-text{
+  text-align: left;
+  margin-left: 60px;
+  
+}
+.descript h6{
+  color: blue;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.descript p{
+  margin-top: -60px;
+  margin-right: 80px;
+}
 .tags-container {
-    display: flex;
-    flex-wrap: wrap;  /* Allow tags to wrap if there isn't enough space */
-    gap: 10px;  /* Add space between the tags */
-    margin-top: 20px;
-  }
+  display: flex;
+  flex-wrap: wrap;  /* Allow tags to wrap if there isn't enough space */
+  gap: 30px;  /* Add space between the tags */
+  margin-top: 20px;
+}
+
+.tag-box {
+  padding: 5px;
+  background-color: #45a049;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px; 
+  text-transform: uppercase;
+    position: relative; /* Set a fixed width for the boxes */
+}
+.tag-box::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -10px; /* Position the arrow to the left of the tag */
+  transform: translateY(-50%); /* Vertically center the arrow */
+  width: 0;
+  height: 0;
+  border-right: 10px solid #45a049;  /* Left arrow color */
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.remove {
+  margin-left:2px;
+  cursor: pointer;
+  font-size: 10px;
+  color: black;
+  transition: color 0.3s;
+}
+
+.remove:hover {
+  color: #ff0000;  /* Change color to red when hovered */
+}
+
+.bookmark-item{
+  font-size: 18px;
+  color: #333;
+  padding: 10px;
+  margin: 5px 20px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
   
-  .tag-box {
-    padding: 8px;
-    background-color: #4caf50;
-    color: white;
-    border-radius: 12px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 150px;  /* Set a fixed width for the boxes */
-  }
-  
-  .remove {
-    margin-left:2px;
-    cursor: pointer;
-    font-size: 10px;
-    color: black;
-    transition: color 0.3s;
-  }
-  
-  .remove:hover {
-    color: #ff0000;  /* Change color to red when hovered */
-  }
-  
-  input {
-    padding: 10px;
-    font-size: 16px;
-    margin-right: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.text2{
+  text-align: left;
+}

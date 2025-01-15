@@ -33,8 +33,15 @@ const TagBookmark=()=>{
   };
 
   return (
-    <div>
-      <h1>Tag Manager</h1>
+    
+        <div className="wrapper-text">
+        <div className="descript">
+            <h6>Let's add some keywords</h6>
+          <p>Keywords are used to match your manuscript with peer reviewers as well as assist readers in finding the published article.Please add at least five keywords (maximum of 10) and remember to keepthem short(a maximum of 3-4 words each) and as specific as possible.Don't add periods to initialisms or acronyms.<span style={{color:"blue"}}>Show me examples</span> </p>
+            </div>  
+            <p><strong>Note:</strong>Additional keywords may be added to your article by our editors</p>
+    <div className="text2">
+        <p>Enter keywords seperated by a comma.</p>
       <input
         type="text"
         value={inputText}
@@ -44,7 +51,6 @@ const TagBookmark=()=>{
       <button onClick={handleAddTag}>Add</button>
 
       <div>
-        <h2>Tags:</h2>
         <div className="bookmark-item">
         <div className="tags-container">
           {tags.map((tag, index) => (
@@ -58,7 +64,10 @@ const TagBookmark=()=>{
           </div>
         </div>
       </div>
+      <p>Please add 3 more keywords in order to proceed.</p>
     </div>
+    </div>
+    
   );
 }
 
