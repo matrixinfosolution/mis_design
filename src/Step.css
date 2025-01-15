@@ -1,0 +1,147 @@
+:root{
+    --line-border-fill:#630cfa;
+    --line-border-empty:#383838;
+}
+
+
+
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0 ;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ddd;
+}
+
+.container{
+    width: 500px; 
+    background-color: #fff;
+    padding:1rem 2rem;
+    border-radius: 5px;
+    overflow-x: hidden;
+}
+.container .content h5{
+    font-size: 2rem;
+    color: blue;
+    margin:0;
+}
+.progress_contain{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    position: relative;
+}
+.progress_contain::before{
+    content: " ";
+    position: absolute;
+    background-color: #ddd;
+    height: 4px;
+    width: 100%;
+    top:50%;
+    left:0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.progress{
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top:50%;
+    width: 100%;
+    left:0;
+    transform: translateY(-50%);
+    height: 4px;
+    z-index: 1;
+    transition: all 0.8s ease-in-out;
+}
+.circle{
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border:2px solid blue;
+    z-index: 1;
+}
+
+.circle.active{
+    border-color: var(--line-border-fill);
+    
+
+}
+label{
+    width: 80%;
+}
+.btns{
+    display: flex;
+    text-align: left;
+    margin: 1rem 0;
+    gap:20px;
+}
+.btn{
+    outline:none;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 4px;
+    background-color: blue;
+    color:#fff;
+    padding: 4px 20px;
+}
+.btn:active{
+    outline:none;
+    transform: scale(0.98);
+}
+.disabled{
+    outline: none;
+    border:none;
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 4px;
+    padding: 4px 20px;
+    color:var(--line-border-empty);
+
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+.content{
+   
+    text-align: left;
+}
+
+@media (max-width:576px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .container{
+        width:100%;
+        min-width: 300px;
+        padding:10px;
+        align-items: center;
+        margin-left: 0;
+    }
+    .progress_contain{
+        width:100%;
+        justify-content: space-between;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+}
+

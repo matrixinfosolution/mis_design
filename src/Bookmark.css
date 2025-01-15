@@ -1,0 +1,21 @@
+.bookmark-item {
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .bookmark-icon {
+    color: #ffcc00; /* Yellow color for bookmark icon */
+    font-size: 24px; /* Adjust size of the icon */
+  }
+  
+  .bookmark-item:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }

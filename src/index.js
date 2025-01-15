@@ -27,7 +27,8 @@ import SignUpPage from './SignUpPage';
 import HeaderDropdown from './HeaderDropdown';
 import DropNavbar from './DropNavbar';
 import Stepper from './Stepper';
-
+import TextBookmark from './TextBookmark';
+import TagBookmark from './TagBookmark';
 const root = document.getElementById("root");
 const queryClient = new QueryClient();
 
@@ -49,8 +50,8 @@ render(
            <Route path="/sign" element={<SignUpPage/>}/> 
            <Route path="/drop" element={<DropNavbar/>}/> 
            <Route path="/step" element={<Stepper/>}/> 
-           
-                               
+           <Route path="/book" element={<TextBookmark/>}/>
+            <Route path="/tag" element={<TagBookmark/>}/>                   
         </Routes>
       </BrowserRouter>
       </QueryClientProvider>

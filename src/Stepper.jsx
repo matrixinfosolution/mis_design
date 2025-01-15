@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import './Stepper1.css';  // Import the CSS file
+import './Step.css';  // Import the CSS file
 import Progress from './Progress';
 const message=["Step 1","Step 2","Step 3"];
 const Stepper = () => {
-   return<Multi/>
+   return(<Multi/>);
 
 };
 
-const Multi=()=>{
+function Multi() {
     const [step,setSteps]=useState(1);
    const totalSteps = 3
     function handlePrev() {
@@ -20,11 +20,11 @@ const Multi=()=>{
     
 return(
     <div className='container'>
-        <div className='progress_container'>
+        <div className='progress_contain'>
             <Progress totalSteps={totalSteps} step={step} className="progress active"/>
-            <div className={`${step >=1 ? "circle active":"circle"}`} onClick={handlePrev}>1</div>
-            <div className={`${step >=2 ? "circle active":"circle"}`} onClick={handleNext}>2</div>
-            <div className={`${step >=3 ? "circle active":"circle"}`} onClick={handleNext}>3</div>
+            <div className={`${step >=1 ? "circle active" : "circle"}`}onClick={handlePrev}>1</div>
+            <div className={`${step >=2 ? "circle active" : "circle"}`}onClick={handleNext}>2</div>
+            <div className={`${step >=3 ? "circle active" : "circle"}`} onClick={handleNext}>3</div>
             
         </div>
         <div className='wrapper'>
