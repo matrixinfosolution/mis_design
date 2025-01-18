@@ -1,0 +1,43 @@
+.wrapper1{
+    text-align: left;
+    margin-top: 10px;
+}
+.work-img{
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+.table-container {
+    width: 100%;
+    margin: 0;
+    padding: 20px; /* Add some padding around the table */
+  }
+  
+  /* Apply a pale white background color to the entire table */
+  .pale-table {
+    background-color: #f9f9f9;
+    width: 100%;  /* Make the table take up the full width of the parent container */
+  border-collapse: collapse;  /* Pale white background color */
+    border-radius: 8px;  /* Optional: Add rounded corners to the table */
+  }
+  
+  /* Style the table header with a black background and white text */
+  .table-header1{
+    background: black;
+    color: white;
+  }
+  
+  /* Optionally, style the table rows */
+  .table td, .table th {
+    text-align: center;
+  }
+  
+  /* Optional: Style hover effect for table rows */
+  .table tbody tr:hover {
+    background-color: #f1f1f1;  /* Slightly darker white on hover */
+  }
+  .button1{
+    padding: 5px 20px;
+    margin-right: 10px;
+  }
