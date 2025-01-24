@@ -1,0 +1,15 @@
+header{
+    position: absolute;
+    top:0;
+    left:20px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 80px;
+}
