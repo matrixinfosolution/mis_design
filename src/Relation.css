@@ -1,0 +1,17 @@
+.form-content{
+    text-align: left;
+    padding: 10px;
+}
+.text{
+    margin-top: 20px;
+    margin-bottom: 2px;
+    font-size: 13px;
+}
+
+button{
+background-color: #0D98BA;
+border-radius: 5px;
+color: white;
+border: none;
+padding: 8px;
+}
