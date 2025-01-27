@@ -1,0 +1,43 @@
+
+
+.input-group{
+    
+    margin-bottom: 8px;
+    border: 1px solid #ddd; /* Border inside each input group */
+    padding: 8px;
+    border-radius: 5px;
+    background-color: white;
+    
+    font-size: 13px;
+}
+.wrapper1{
+    text-align: left;
+}
+.text2{
+    font-size: 13px;
+    border-radius: 3px;
+    border: none;
+}
+.text3{
+    margin-top: 10px;
+}
+.text4{
+    text-decoration: underline;
+    color: #0D98BA;
+    font-size: 15px;
+    text-align: left;
+}
+
+.text5{
+    text-align: end;
+    font-size: 13px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 100px;
+    margin-left: 10px;
+    
+}
+.wrapper2{
+    text-align: right;
+
+}
