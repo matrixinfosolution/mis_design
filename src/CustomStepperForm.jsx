@@ -72,7 +72,7 @@ function Multi() {
          if(step == 3) setSteps((step)=>step - 1);
     }
 return(
-    <div className='container'>
+    <div className='fg-container'>
         <div className='progress_contain'>
             <Progress totalSteps={totalSteps} step={step} className="progress active"/>
             <div className={`${step >=1 ? "circle active" : "circle"}`}onClick={handlePrev1}>1</div>
@@ -93,7 +93,7 @@ return(
         <div>
           <h3>Forget Passward</h3>
           <p className='mt-3'>No worries,we'll send you reset instructions</p>
-          <label className='text9'>Email</label>
+          <label className='fg-text9'>Email</label>
         
       <input
         type="text"
@@ -103,7 +103,7 @@ return(
       
             style={{ width: '100%', padding: '10px', marginBottom: '10px' }}
           />
-          <button className='mt-6 butts bg-primary'>Reset Passward</button>
+          <button className='mt-6 fg-butts bg-primary'>Reset Passward</button>
          <p className='mt-4'><span><BsArrowLeft /></span> Back to log in</p>
         </div>
       )}
@@ -131,7 +131,7 @@ return(
           </div>
           </Col>
           </Row>
-          <button className='mt-6 butts bg-primary'>Continue</button>
+          <button className='mt-6 fg-butts bg-primary'>Continue</button>
         
         <p>Don't receive the email?<span style={{color:"blue"}}>Click to resend</span></p>
         <p className='mt-4'><span><BsArrowLeft /></span> Back to log in</p>
@@ -141,7 +141,7 @@ return(
         <div>
           <h3>Set new passward</h3>
           <p className='mt-3'>Must be atleast 8 characters</p>
-          <label className='mt-4 text9'>Passward</label>
+          <label className='mt-4 fg-text9'>Passward</label>
           <input
             type="text"
             name="firstName"
@@ -150,7 +150,7 @@ return(
             onChange={handleChange}
             style={{ width: '100%', padding: '10px', marginBottom: '10px' }}
           />
-          <label className='mt-3 text9'>Confirm passward</label>
+          <label className='mt-3 fg-text9'>Confirm passward</label>
            <input
             type="text"
             name="firstName"
@@ -159,7 +159,7 @@ return(
             onChange={handleChange}
             style={{ width: '100%', padding: '10px', marginBottom: '10px' }} className='mt-1'
           />
-          <button className='mt-6 butts bg-primary'>Reset Passward</button>
+          <button className='mt-6 fg-butts bg-primary'>Reset Passward</button>
           <p className='mt-4'><span><BsArrowLeft /></span> Back to log in</p>
         </div>
       )}

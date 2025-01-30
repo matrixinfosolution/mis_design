@@ -11,21 +11,16 @@
     margin: 0 ;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ddd;
-}
 
-.container{ 
+
+.fg-container{ 
     background-color: #fff;
     padding:1rem 2rem;
     border-radius: 5px;
     overflow-x: hidden;
     width: 100%;
 }
-.container .content h5{
+.fg-container .content h5{
     font-size: 2rem;
     color: blue;
     margin:0;
@@ -113,12 +108,12 @@ label{
     justify-content: center;
     align-items: center;
 }
-.text9{
+.fg-text9{
     text-align: left;
     font-weight: bold;
     justify-content: flex-start;
 }
-.butts{
+.fg-butts{
     width: 100%;
     margin-top: 10px;
     padding: 10px 25px;
