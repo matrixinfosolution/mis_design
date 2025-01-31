@@ -1,0 +1,38 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  .arrow-button {
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border:none;
+  }
+  
+  .arrow-button:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+  }
+  
+  .left {
+    margin-right: 20px;
+  }
+  
+  .right {
+    margin-left: 20px;
+  }
+
+
+  .text4{
+    font-size: 40px;
+  }
+
+  

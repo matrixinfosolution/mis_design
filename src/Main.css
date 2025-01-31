@@ -1,0 +1,63 @@
+.container {
+    display: flex;     
+    align-items: flex-start;  
+       /* Use flexbox to align items horizontally */     /* Vertically center the items */
+  }
+  
+  .text-image-container {
+    display: flex;
+    flex-direction: column;    /* Stack text and image vertically */
+    align-items: center; 
+    justify-content: center; 
+    text-align: left;     /* Center the text and image horizontally */      /* Align the text in the center */
+  }
+
+  
+  .circle {
+    width: 20px;              /* Set the size of the circle */
+    height: 20px;
+    background-color:white; /* Green color for the circle */
+    border-radius: 50%; 
+    border-color: green;       /* Make it round */
+    display: flex;  /* Center the check mark horizontally */
+      justify-content: center;
+      align-items: center;     /* Center the check mark vertically */
+    font-size: 10px;           /* Size of the check mark */
+    color: green;              /* Color of the check mark */
+    font-weight: bold;         /* Bold check mark */
+    margin-right: 10px; 
+    margin-top: 8px;       /* Space between the circle and the paragraph */
+  }
+  
+  .check {
+    display: inline-block;
+  }
+  .circle_2 {
+    width: 20px;              /* Set the size of the circle */
+    height: 20px;
+    background-color:white; /* Green color for the circle */
+    border-radius: 50%; 
+    border-color: red;       /* Make it round */
+    display: flex;
+    justify-content: center;   /* Center the check mark horizontally */
+    align-items: center;       /* Center the check mark vertically */
+    font-size: 10px;           /* Size of the check mark */
+    color: red;              /* Color of the check mark */
+    font-weight: bold;         /* Bold check mark */
+    margin-right: 10px;   
+    margin-top: 8px;     /* Space between the circle and the paragraph */
+  }
+  
+  .check1 {
+    display: inline-block;
+  }
+  .text {
+    font-size: 20px;
+    margin-bottom: 0;           /* Size of the text */                /* Remove any default margin */              /* Text color */
+  }
+  .timg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
