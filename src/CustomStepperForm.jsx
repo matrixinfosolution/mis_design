@@ -73,11 +73,11 @@ function Multi() {
     }
 return(
     <div className='fg-container'>
-        <div className='progress_contain'>
-            <Progress totalSteps={totalSteps} step={step} className="progress active"/>
-            <div className={`${step >=1 ? "circle active" : "circle"}`}onClick={handlePrev1}>1</div>
-            <div className={`${step >=2 ? "circle active" : "circle"}`}onClick={handleNext1}>2</div>
-            <div className={`${step >=3 ? "circle active" : "circle"}`} onClick={handleNext}>3</div>
+        <div className='fg-progress_contain'>
+            <Progress totalSteps={totalSteps} step={step} className="fg-progress active"/>
+            <div className={`${step >=1 ? "fg-circle active" : "fg-circle"}`}onClick={handlePrev1}>1</div>
+            <div className={`${step >=2 ? "fg-circle active" : "fg-circle"}`}onClick={handleNext1}>2</div>
+            <div className={`${step >=3 ? "fg-circle active" : "fg-circle"}`} onClick={handleNext}>3</div>
             
         </div>
         
@@ -88,7 +88,7 @@ return(
             <button className='btn'onClick={handleNext}>Next</button>
         </div>
 </div>*/}
-<div className='wrapper'>
+<div className='fg-wrapper'>
  {step === 1 && (
         <div>
           <h3>Forget Passward</h3>
@@ -114,7 +114,7 @@ return(
           <Row>
           
           <Col lg={12}>
-          <div className="code-inputs">
+          <div className="fg-code-inputs">
             {code.map((digit, index) => (
               <input
                 key={index}
@@ -125,7 +125,7 @@ return(
                 ref={inputRefs[index]}
                 autoFocus={index === 0}
                 required
-                className="code-input"
+                className="fg-code-input"
               />
             ))}
           </div>
