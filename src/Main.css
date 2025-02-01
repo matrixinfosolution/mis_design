@@ -1,10 +1,10 @@
-.container {
+.ar-container {
     display: flex;     
     align-items: flex-start;  
        /* Use flexbox to align items horizontally */     /* Vertically center the items */
   }
   
-  .text-image-container {
+  .ar-text-image-container {
     display: flex;
     flex-direction: column;    /* Stack text and image vertically */
     align-items: center; 
@@ -13,7 +13,7 @@
   }
 
   
-  .circle {
+  .ar-circle {
     width: 20px;              /* Set the size of the circle */
     height: 20px;
     background-color:white; /* Green color for the circle */
@@ -29,10 +29,10 @@
     margin-top: 8px;       /* Space between the circle and the paragraph */
   }
   
-  .check {
+  .ar-check {
     display: inline-block;
   }
-  .circle_2 {
+  .ar-circle_2 {
     width: 20px;              /* Set the size of the circle */
     height: 20px;
     background-color:white; /* Green color for the circle */
@@ -48,14 +48,14 @@
     margin-top: 8px;     /* Space between the circle and the paragraph */
   }
   
-  .check1 {
+  .ar-check1 {
     display: inline-block;
   }
-  .text {
+  .ar-text {
     font-size: 20px;
     margin-bottom: 0;           /* Size of the text */                /* Remove any default margin */              /* Text color */
   }
-  .timg{
+  .ar-timg{
     display: flex;
     justify-content: center;
     align-items: center;
